@@ -1,0 +1,10 @@
+.idea
+qavenv
+*.log
+.pytest_cache/
+*/__pycache__/
+__pycache__/
+allure-results
+*scan.txt
+*.json
+.env
