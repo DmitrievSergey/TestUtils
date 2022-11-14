@@ -71,7 +71,7 @@ def browser(request):
         )
 
     elif browser == "chrome":
-        service = ChromiumService(executable_path=drivers + "/chromedriver106")
+        service = ChromiumService(executable_path=drivers + "/chromedriver")
         driver = webdriver.Chrome(service=service)
     elif browser == "firefox":
         service = FFService(executable_path=drivers + "/geckodriver")
