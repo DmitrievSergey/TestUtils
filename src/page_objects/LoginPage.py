@@ -7,7 +7,7 @@ class LoginPage(BasePage):
     PATH = '/'
     USERNAME_INPUT = (By.CSS_SELECTOR, "#email-input")
     PASSWORD_INPUT = (By.CSS_SELECTOR, "#password-input")
-    SIGNIN_BUTTON = (By.XPATH, "//button[@class='btn btn-primary w-100 ng-tns-c303-2 ng-star-inserted']")
+    SIGNIN_BUTTON = (By.XPATH, "//button[contains(text(),'Sign In')]")
 
     def open_login_page(self):
         self._open_page(self.PATH)
